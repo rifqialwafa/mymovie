@@ -12,7 +12,7 @@
 
     @media screen and (max-width: 1080px) {
       section.gallery {
-        width: 142px !important;
+        width: 150px !important;
         max-height: 320px;
       }
 
