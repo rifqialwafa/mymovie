@@ -12,7 +12,7 @@
 
     @media screen and (max-width: 1080px) {
       section.gallery {
-        width: 150px !important;
+        width: 142px !important;
         max-height: 320px;
       }
 
@@ -373,7 +373,7 @@
       section.gallery {
         display: inline-block;
         margin: 5px 5px 10px;
-        width: 142px;
+        width: 150px;
         max-height: 250px;
         text-align: center;
       }
