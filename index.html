@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMOVIE</title>
+    <link rel="icon" type="image/png" href="https://i.dlpng.com/static/png/6980567_preview.png">
+    <link rel="stylesheet" href="asset/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-top">
+        <input type="checkbox" id="check">
+        <label for="check" class="btn-bars">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <label class="logo"><a href="../tugas_minggu1/" onclick="window.location.reload()"> <span id="my">MY</span>MOVIE</a></label>
+        <ul class="ul-nav">
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Quality</a>
+            <div class="dropdown-content">
+              <a href="#fhd">1080p</a>
+              <a href="#hd">720p</a>
+              <a href="#sd">SD</a>
+            </div>
+          </li>
+          <li><a href="#mv">Most Viewed</a></li>
+          <li><a href="#mr">Most Rating</a></li>
+          <li><a href="#ti" class="topimdb">Top IMDb</a></li>
+          <li><a id="search" onclick="openSearch()">Search..</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- form search -->
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form action="#action" class="forms">
+          <input type="text" placeholder="Search.." name="search" autocomplete="off">
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <div class="header-content">
+        <article class="content">
+          <span class="welcome">
+            Welcome to <a href="#mymovie">My Movie</a>, Click The Movie then Enjoy
+          </span>
+        </article>
+      </div>
+      <div class="main-content">
+        <article class="content-mini">
+          <span class="top-judul">
+            Featured Movie
+          </span>
+          <a href="#">
+            <span class="more">
+              See more..
+            </span>
+          </a>
+        </article>
+        <article class="content">
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/abigail2020.jpg">
+              <div class="foto-desc">
+                <img src="asset/img/abigail2020.jpg" alt="ABIGAIL 2020" width="600" height="400" class="image" class="image">
+                <div class="content-desc">
+                  <div class="desc">ABIGAIL (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/badboyforlife2020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/badboyforlife2020.jfif" alt="BAD BOY FOR LIFE 2020" width="600" height="400" class="image" class="image">
+                <div class="content-desc">
+                  <div class="desc">BAD BOY FOR LIFE (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/blackwidow2020.jpeg">
+              <div class="foto-desc">
+                <img src="asset/img/blackwidow2020.jpeg" alt="BLACK WIDOW 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">BLACK WIDOW (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/captainmarvel2019.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/captainmarvel2019.jfif" alt="CAPTAIN MARVEL 2019" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">CAPTAIN MARVEL (2019)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/extraction2020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/extraction2020.jfif" alt="EXTRACTION 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">EXTRACTION (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/joker2019.jpg">
+              <div class="foto-desc">
+                <img src="asset/img/joker2019.jpg" alt="JOKER 2019" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">JOKER (2019)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/only2020.jpg">
+              <div class="foto-desc">
+                <img src="asset/img/only2020.jpg" alt="ONLY 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">ONLY (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/proximity2020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/proximity2020.jfif" alt="PROXIMITY 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">PROXIMITY (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/sebelumiblismenjemputayat22020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/sebelumiblismenjemputayat22020.jfif" alt="SEBELUM IBLIS MENJEMPUT AYAT 2 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">SEBELUM IBLIS MENJEMPUT AYAT 2 (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/spidermanfarfromhome2019.jpg">
+              <div class="foto-desc">
+                <img src="asset/img/spidermanfarfromhome2019.jpg" alt="SPIDERMAN FAR FROM HOME 2019" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">SPIDERMAN FAR FROM HOME (2019)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/theinvisibleman2020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/theinvisibleman2020.jfif" alt="THE INVISIBLEMAN 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc">THE INVISIBLEMAN 2020</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/thewhistler2020.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/thewhistler2020.jfif" alt="THE WHISTLER 2020" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc-test">THE WHISTLER (2020)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/twilight2011.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/twilight2011.jfif" alt="TWILIGHT SAGA 2011" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc-test">TWILIGHT SAGA (2011)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <section class="gallery">
+            <div class="middle">
+              <div class="text-play">Play Movie</div>
+            </div>
+            <a target="_blank" href="asset/img/twilight2012.jfif">
+              <div class="foto-desc">
+                <img src="asset/img/twilight2012.jfif" alt="TWILLIGHT SAGA 2012" width="600" height="400" class="image">
+                <div class="content-desc">
+                  <div class="desc-test">TWILLIGHT SAGA (2012)</div>
+                </div>
+              </div>
+            </a>
+          </section>
+        </article>
+      </div>
+
+      <aside class="genre card">
+        <h2>Genre</h2>
+        <hr>
+        <ul class="line">
+          <li> <a class="line50" href="#Action">Action</a> </li>
+          <li> <a class="line50" href="#Adventure">Adventure</a> </li>
+          <li> <a class="line50" href="#Animation">Animation</a> </li>
+          <li> <a class="line50" href="#Biography">Biography</a> </li>
+          <li> <a class="line50" href="#Comedy">Comedy</a> </li>
+          <li> <a class="line50" href="#Crime">Crime</a> </li>
+          <li> <a class="line50" href="#Documentary">Documentary</a> </li>
+          <li> <a class="line50" href="#Drama">Drama</a> </li>
+          <li> <a class="line100" href="#Sci-FiFantasy">Sci-Fi & Fantasy</a> </li>
+          <li> <a class="line50" href="#Family">Family</a> </li>
+          <li> <a class="line50" href="#Fantasy">Fantasy</a> </li>
+          <li> <a class="line50" href="#Featured">Featured</a> </li>
+          <li> <a class="line50" href="#Foreign">Foreign</a> </li>
+          <li> <a class="line50" href="#History">History</a> </li>
+          <li> <a class="line50" href="#Horror">Horror</a> </li>
+          <li> <a class="line50" href="#Musical">Musical</a> </li>
+          <li> <a class="line50" href="#Mystery">Mystery</a> </li>
+          <li> <a class="line50" href="#Reality">Reality</a> </li>
+          <li> <a class="line50" href="#Romance">Romance</a> </li>
+          <li> <a class="line100" href="#ScienceFiction">Science Fiction</a> </li>
+          <li> <a class="line50" href="#Soap">Soap</a> </li>
+          <li> <a class="line50" href="#Sport">Sport</a> </li>
+          <li> <a class="line50" href="#Thriller">Thriller</a> </li>
+          <li> <a class="line50" href="#TVMovie">TV Movie</a> </li>
+          <li> <a class="line100" href="#WarWarPolitics">WarWar & Politics</a> </li>
+        </ul>
+      </aside>
+
+      <!-- <aside class="profile card">
+        <h2>Profile</h2>
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Rifqi Al Wafa</td>
+          </tr>
+          <tr>
+            <td>Umur</td>
+            <td>:</td>
+            <td>18 Tahun</td>
+          </tr>
+          <tr>
+            <td>Asal Kota</td>
+            <td>:</td>
+            <td>Bogor</td>
+          </tr>
+          <tr>
+            <td>Tema</td>
+            <td>:</td>
+            <td>Gallery Movie</td>
+          </tr>
+          <tr>
+            <td colspan="3">Istar Batch #2</td>
+          </tr>
+        </table>
+      </aside> -->
+    </main>
+
+    <footer>
+      <p>Copyright By <a href="#myProfile" class="al">Rifqi Al Wafa</a> @2020</p>
+    </footer>
+
+    <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+
+
+  </body>
+</html>
