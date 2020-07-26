@@ -65,6 +65,10 @@
         padding: 20px 15px !important;
       }
     }
+        
+      body{
+        zoom: 125%;
+     }
 
     *{
         font-family: "myFont";
